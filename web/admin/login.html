@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1>Customer Login</h1>
+                <p>Please enter your account credentials below to access your account.</p>
+                <form action="/Login" method="post">
+                    <div class="field">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+                    <div class="field">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <input type="submit" value="Admin" id="submit" class="button">
+                </form>
+                <p><a href="password_reset.jsp">Forgot password?</a></p>
+            </div>
+        </main>
+    </body>
+</html>

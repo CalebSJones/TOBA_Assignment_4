@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/TOBA_Assignment_4">
+    <Resource name="jdbc/toba" auth="Container" 
+        maxActive="1000" maxIdle="30" maxWait="10000"
+        username="toba" password="password"
+        driverClassName="com.mysql.jdbc.Driver" 
+        url="jdbc:msql://localhost:3306/muysic?autoReconnect=true"
+        logAbandoned="true" removeAbandoned="true"
+        removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+    <Realm className="org.apache.catalina.realm.DataSourceRealm"
+        debug="99" dataSourceName="jdbc/toba" localDataSource="true"
+        userTable="user" userNameCol="USERNAME" userCredCol="PASSWORD"
+        userRoleTable="USERROLE" roleNameCol="ROLENAME" />
+</Context>
